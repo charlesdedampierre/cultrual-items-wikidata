@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "complexity"
+version = "0.1.0"
+description = ""
+authors = ["Charles De Dampierre <charles.de-dampierre@hec.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^2.0.1"
+jupyterlab = "^3.6.3"
+sparqlwrapper = "^2.0.0"
+tqdm = "^4.65.0"
+pydantic = "^1.10.7"
+loguru = "^0.7.0"
+pydantic-sqlite = "^0.2.1"
+sqlalchemy = "^2.0.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+# pip install polars
+#pip install polars==0.10.9
+

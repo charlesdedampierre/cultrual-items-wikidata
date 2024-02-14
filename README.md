@@ -1,5 +1,7 @@
 # Database of Works in Wikidata
 
+You can access the raw_data and the compiled SQLITE3 database on [OSF](https://osf.io/a65pj/)
+
 Pipeline:
 
 1) Extract all works that are instance of sub-instance of work of art (Q838948) (extraction/extract_seed.py)
@@ -15,14 +17,14 @@ The main table is SubjectLabel that contains all the piece of works in Wikidata.
 In this table, the count_all means that the instance (for instance 'Hitsugi no Chaika') has 6 different instance. An instance means the type of work it is. In order to see the different instances, please go to the table subject_instance:
 
 You will find this result:
-
-subject     subjectLabel        instance
-Q10855446 Hitsugi no Chaika Q220898
-Q10855446 Hitsugi no Chaika Q747381
-Q10855446 Hitsugi no Chaika Q1667921
-Q10855446 Hitsugi no Chaika Q2635894
-Q10855446 Hitsugi no Chaika Q21198342
-Q10855446 Hitsugi no Chaika Q63952888
+| Subject      | SubjectLabel         | Instance |
+|-----------|------------------|-------------------|
+| Q10855446 | Hitsugi no Chaika | Q220898          |
+| Q10855446 | Hitsugi no Chaika | Q747381          |
+| Q10855446 | Hitsugi no Chaika | Q1667921         |
+| Q10855446 | Hitsugi no Chaika | Q2635894         |
+| Q10855446 | Hitsugi no Chaika | Q21198342        |
+| Q10855446 | Hitsugi no Chaika | Q63952888        |
 
 In order to access the instance name, please go to the table instanceLabel. For instance, Q220898 means 'original video animation'
 
@@ -73,3 +75,17 @@ Count is from item and sub-items (wdt:P279*)
 - 'infrastructure' (Q121359): 1,400,027
 
 'human'(Q5): 10,632,484
+
+## Citation
+
+If you use this project in your research or wish to refer to the benchmark results, please use the following BibTeX entry.
+
+```BibTeX
+@misc{cultural_items_wikidata,
+  author = {de Dampierre, Charles},
+  title = {Cultural Items Wikidata},
+  year = {Year},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/charlesdedampierre/cultural-items-wikidata}}
+}
